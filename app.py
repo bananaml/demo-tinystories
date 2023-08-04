@@ -34,9 +34,6 @@ def handler(context: dict, request: Request) -> Response:
     outputs = model.generate(input_ids, max_length = 1000, num_beams=1)
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
- 
-    print(text)
-
     return Response(
         json = {"outputs": text}, 
         status=200

@@ -1,11 +1,28 @@
 {
-    "name": "TinyStories-33M",
-    "category": "",
-    "example_input": {
-        "prompt": "Once upon a time"
+    "version": "1",
+    "inputs": [
+        {
+            "name": "prompt",
+            "description": "The prompt to feed to the model.",
+            "type": "string",
+            "required": true
+        }
+    ],
+    "output": {
+        "result": {
+            "type": "string",
+            "description": "The generated text.",
+            "path": "outputs"
+        }
     },
-    "example_output": {
-        "outputs": "Once upon a time, there was a little girl named Lily. She loved to play outside in the sunshine. One day, she saw a big, scary dog. The dog barked and growled at her..."
-    },
-    "version": "1"
+    "examples": [
+        {
+            "inputs": {
+                "prompt": "Once upon a time"
+            },
+            "output": {
+                "outputs": "Once upon a time, there was a little girl named Lily. She loved to play outside in the sunshine. One day, she saw a big, scary dog. The dog barked and growled at her..."
+            }
+        }
+    ]
 }
