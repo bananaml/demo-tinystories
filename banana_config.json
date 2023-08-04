@@ -1,0 +1,11 @@
+{
+    "name": "TinyStories-33M",
+    "category": "",
+    "example_input": {
+        "prompt": "Once upon a time"
+    },
+    "example_output": {
+        "outputs": "Once upon a time, there was a little girl named Lily. She loved to play outside in the sunshine. One day, she saw a big, scary dog. The dog barked and growled at her..."
+    },
+    "version": "1"
+}
